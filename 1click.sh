@@ -4,9 +4,9 @@ Red_font_prefix="\033[31m"
 Green_background_prefix="\033[42;37m"
 Red_background_prefix="\033[41;37m"
 Font_color_suffix="\033[0m"
-Info="[${Green_font_prefix}Message${Font_color_suffix}]"
-Error="[${Red_font_prefix}Error${Font_color_suffix}]"
-Tip="[${Green_font_prefix}Attention${Font_color_suffix}]"
+Info="[${Green_font_prefix}Info ${Font_color_suffix}]"
+Error="[${Red_font_prefix}Error ${Font_color_suffix}]"
+Tip="[${Green_font_prefix}Tip ${Font_color_suffix}]"
 check_root() {
     [[ $EUID != 0 ]] && echo -e "${Error} Please change to the ROOT account or use ${Green_background_prefix}sudo su${Font_color_suffix} command to obtain temporary ROOT privileges." && exit 1
 }
